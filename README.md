@@ -1,19 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Hussein Bassam - Senior Backend Architect Portfolio
 
-# Run and deploy your AI Studio app
+Welcome to my professional portfolio repository. This project showcases my experience, skills, and background as a Senior Backend Architect specializing in .NET, Cloud Architecture, and Enterprise solutions.
 
-This contains everything you need to run your app locally.
+## 🚀 Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ABd_7FkZMLQm2c1GwJiQSz8qdWPi6Q49
+Visit the live portfolio here: [https://husseinbbassam.github.io](https://husseinbbassam.github.io)
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+This portfolio is built with modern web technologies:
 
+*   **Framework:** [React](https://reactjs.org/) (v18+)
+*   **Build Tool:** [Vite](https://vitejs.dev/)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Deployment:** GitHub Pages
 
-1. Install dependencies:
-   `npm install`
-2. Run the app:
-   `npm run dev`
+## 💻 Running Locally
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/husseinbbassam/husseinbbassam.github.io.git
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the server:**
+    ```bash
+    npm run dev
+    ```
+
+## 📦 Building for Production
+
+```bash
+npm run build
+```
