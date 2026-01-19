@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,20 @@
     <!-- Favicon (Code Symbol) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 
+    <script>
+        tailwind = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              colors: {
+                zinc: {
+                  950: '#09090b',
+                }
+              }
+            }
+          }
+        }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +37,11 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #18181b;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark body {
             background-color: #09090b;
             color: #fafafa;
         }
@@ -30,22 +49,34 @@
             font-family: 'JetBrains Mono', monospace;
         }
         .glass {
-            background: rgba(18, 18, 22, 0.7);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .dark .glass {
+            background: rgba(18, 18, 22, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
         .bento-card {
-            background: #18181b;
-            border: 1px solid #27272a;
+            background: #ffffff;
+            border: 1px solid #e4e4e7;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .dark .bento-card {
+            background: #18181b;
+            border: 1px solid #27272a;
+        }
         .bento-card:hover {
-            border-color: #3f3f46;
-            background: #1c1c21;
+            border-color: #a1a1aa;
+            background: #f4f4f5;
             transform: translateY(-2px);
         }
+        .dark .bento-card:hover {
+            border-color: #3f3f46;
+            background: #1c1c21;
+        }
     </style>
-  <script type="module" crossorigin src="./assets/index-B-MSpps_.js"></script>
+  <script type="module" crossorigin src="./assets/index-C9dzrMzp.js"></script>
 </head>
 <body>
     <div id="root"></div>
