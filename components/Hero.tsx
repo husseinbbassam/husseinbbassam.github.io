@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-20 left-1/2 -translate-x-1/2 -z-10 w-[800px] h-[400px] bg-indigo-500/10 dark:bg-indigo-500/5 blur-[120px] rounded-full transition-colors duration-500"></div>
       
       <div className="max-w-5xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 dark:bg-zinc-900/80 border border-zinc-200 dark:border-zinc-800 text-[11px] font-bold uppercase tracking-widest text-zinc-600 dark:text-zinc-400 mb-10 shadow-sm dark:shadow-inner transition-colors duration-300">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 dark:bg-zinc-900/80 border border-zinc-300 dark:border-zinc-800 text-[11px] font-bold uppercase tracking-widest text-zinc-900 dark:text-zinc-400 mb-10 shadow-sm dark:shadow-inner transition-colors duration-300">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -17,12 +17,12 @@ const Hero: React.FC = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-[0.95] transition-colors duration-300">
-          <span className="block text-zinc-900 dark:text-zinc-100 mb-2 transition-colors duration-300">HUSSEIN</span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-400 dark:from-zinc-100 dark:via-zinc-400 dark:to-zinc-600 uppercase transition-all duration-300">BASSAM</span>
+          <span className="block text-black dark:text-zinc-100 mb-2 transition-colors duration-300">HUSSEIN</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-500 dark:from-zinc-100 dark:via-zinc-400 dark:to-zinc-600 uppercase transition-all duration-300">BASSAM</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light transition-colors duration-300">
-          Architecting resilient <span className="text-zinc-900 dark:text-zinc-100 font-medium transition-colors duration-300">high-throughput backends</span> with .NET Core. Bridging complex business logic with <span className="text-emerald-500 dark:text-emerald-400/80 font-mono italic transition-colors duration-300">scalable infrastructure</span> and data-driven insights.
+        <p className="text-lg md:text-xl text-zinc-800 dark:text-zinc-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light transition-colors duration-300">
+          Architecting resilient <span className="text-black dark:text-zinc-100 font-medium transition-colors duration-300">high-throughput backends</span> with .NET Core. Bridging complex business logic with <span className="text-emerald-600 dark:text-emerald-400/80 font-mono italic transition-colors duration-300">scalable infrastructure</span> and data-driven insights.
         </p>
         
         <div className="flex flex-wrap items-center justify-center gap-5">

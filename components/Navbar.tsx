@@ -63,11 +63,11 @@ const Navbar: React.FC = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between glass rounded-3xl px-6 py-4 border border-zinc-200 dark:border-white/5 shadow-2xl transition-colors duration-300">
         <Logo />
         
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
-          <a href="#about" className="hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
-          <a href="#skills" className="hover:text-zinc-900 dark:hover:text-white transition-colors">Arsenal</a>
-          <a href="#experience" className="hover:text-zinc-900 dark:hover:text-white transition-colors">Journey</a>
-          <a href="#education" className="hover:text-zinc-900 dark:hover:text-white transition-colors">Education</a>
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-900 dark:text-zinc-400">
+          <a href="#about" className="hover:text-black dark:hover:text-white transition-colors">About</a>
+          <a href="#skills" className="hover:text-black dark:hover:text-white transition-colors">Arsenal</a>
+          <a href="#experience" className="hover:text-black dark:hover:text-white transition-colors">Journey</a>
+          <a href="#education" className="hover:text-black dark:hover:text-white transition-colors">Education</a>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <a href="#contact" className="ml-4 px-5 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 rounded-xl font-bold hover:bg-zinc-800 dark:hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-zinc-900/10 dark:shadow-white/5">
