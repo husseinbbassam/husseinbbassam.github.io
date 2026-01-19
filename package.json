@@ -2,6 +2,7 @@
   "name": "hussein-bassam-|-senior-backend-architect",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://husseinbbassam.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
