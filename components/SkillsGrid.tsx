@@ -11,8 +11,8 @@ const SkillsGrid: React.FC = () => {
           <p className="text-zinc-500">The tools and patterns I use to architect production-grade backends.</p>
         </div>
         <div className="flex gap-2">
-            <span className="px-3 py-1 bg-zinc-900 rounded-lg text-xs font-mono border border-zinc-800">C# Expert</span>
-            <span className="px-3 py-1 bg-zinc-900 rounded-lg text-xs font-mono border border-zinc-800">Azure Architect</span>
+            <span className="px-3 py-1 bg-zinc-900 rounded-lg text-xs font-mono border border-zinc-800 text-zinc-300">C# Expert</span>
+            <span className="px-3 py-1 bg-zinc-900 rounded-lg text-xs font-mono border border-zinc-800 text-zinc-300">.NET Professional</span>
         </div>
       </div>
 
