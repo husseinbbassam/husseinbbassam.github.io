@@ -20,42 +20,6 @@ const Logo: React.FC = () => (
   </div>
 );
 
-const ThemeToggle: React.FC = () => {
-  const [isDark, setIsDark] = useState(true);
-
-  useEffect(() => {
-    // Check system preference or class on mount
-    if (document.documentElement.classList.contains('dark')) {
-      setIsDark(true);
-    } else {
-      setIsDark(false);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const newDark = !isDark;
-    setIsDark(newDark);
-    if (newDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  };
-
-  return (
-    <button 
-      onClick={toggleTheme}
-      className="p-2 ml-4 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 hover:scale-105 transition-all shadow-sm"
-      aria-label="Toggle Dark Mode"
-    >
-      {isDark ? (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
-      ) : (
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
-      )}
-    </button>
-  );
-};
 
 const Navbar: React.FC = () => {
   return (
@@ -69,7 +33,6 @@ const Navbar: React.FC = () => {
           <a href="#experience" className="hover:text-black dark:hover:text-white transition-colors">Journey</a>
           <a href="#education" className="hover:text-black dark:hover:text-white transition-colors">Education</a>
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             <a href="#contact" className="ml-4 px-5 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 rounded-xl font-bold hover:bg-zinc-800 dark:hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-zinc-900/10 dark:shadow-white/5">
               Contact
             </a>
@@ -78,7 +41,6 @@ const Navbar: React.FC = () => {
         
         {/* Mobile menu indicator or simple version for small screens */}
         <div className="md:hidden flex items-center gap-4">
-          <ThemeToggle />
           <a href="#contact" className="w-10 h-10 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 rounded-full flex items-center justify-center font-bold hover:scale-105 transition-transform" aria-label="Contact">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </a>
