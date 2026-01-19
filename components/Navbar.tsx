@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Logo: React.FC = () => (
-  <div className="flex items-center gap-3 group cursor-pointer">
+  <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-3 group cursor-pointer">
     <div className="relative">
       <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-indigo-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
       <div className="relative w-10 h-10 bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-lg flex items-center justify-center overflow-hidden transition-colors duration-300">
@@ -17,7 +17,7 @@ const Logo: React.FC = () => (
       <span className="text-zinc-900 dark:text-zinc-100 font-extrabold tracking-tighter text-xl leading-none transition-colors duration-300">HUSSEIN</span>
       <span className="text-zinc-500 font-medium tracking-[0.2em] text-[10px] leading-tight">BASSAM</span>
     </div>
-  </div>
+  </a>
 );
 
 
