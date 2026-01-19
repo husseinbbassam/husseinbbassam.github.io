@@ -31,7 +31,7 @@ const Timeline: React.FC = () => {
               <div className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${hoveredIndex === idx ? 'bg-zinc-100 dark:bg-zinc-900' : 'bg-zinc-300 dark:bg-zinc-700'}`}></div>
             </div>
 
-            <div className={`p-6 rounded-3xl transition-all duration-300 border ${hoveredIndex === idx ? 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700 shadow-xl' : 'border-transparent opacity-70'}`}>
+            <div className={`p-6 rounded-3xl transition-all duration-300 border ${hoveredIndex === idx ? 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700 shadow-xl' : 'bg-transparent border-transparent'}`}>
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 transition-colors duration-300">{exp.role}</h3>
