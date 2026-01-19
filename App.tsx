@@ -44,7 +44,7 @@ const App: React.FC = () => {
       {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-6 left-6 p-4 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl text-zinc-900 dark:text-zinc-100 transition-all duration-500 z-50 hover:scale-110 active:scale-95 flex items-center justify-center group ${
+        className={`fixed bottom-6 right-6 hidden md:flex p-4 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl text-zinc-900 dark:text-zinc-100 transition-all duration-500 z-50 hover:scale-110 active:scale-95 items-center justify-center group ${
           showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
         aria-label="Back to top"
