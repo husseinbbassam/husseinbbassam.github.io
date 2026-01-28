@@ -11,6 +11,9 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
+      build: {
+        target: 'es2015', // ES2015 provides broad browser support including Safari 14+
+      },
       define: {
         // Env variables can be handled here if needed
       },
