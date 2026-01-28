@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { SKILL_CATEGORIES } from '../constants';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const SkillsGrid: React.FC = () => {
   return (
@@ -18,7 +19,24 @@ const SkillsGrid: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {SKILL_CATEGORIES.map((cat, idx) => (
-          <div key={idx} className="bento-card p-6 rounded-3xl flex flex-col transition-colors duration-300">
+          <SkillCard key={idx} cat={cat} idx={idx} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const SkillCard: React.FC<{ cat: typeof SKILL_CATEGORIES[0]; idx: number }> = ({ cat, idx }) => {
+  const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
+
+  return (
+    <div
+      ref={ref}
+      className={`bento-card p-6 rounded-3xl flex flex-col transition-all duration-700 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
+      style={{ transitionDelay: `${idx * 100}ms` }}
+    >
             <div className="mb-4 p-3 bg-zinc-100 dark:bg-zinc-800/50 rounded-2xl w-fit transition-colors duration-300">
               <svg className="w-6 h-6 text-black dark:text-zinc-100 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={cat.icon} />
@@ -33,9 +51,6 @@ const SkillsGrid: React.FC = () => {
               ))}
             </div>
           </div>
-        ))}
-      </div>
-    </section>
   );
 };
 

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { EDUCATIONS } from '../constants';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const EducationSection: React.FC = () => {
   return (
@@ -30,7 +31,25 @@ const EducationSection: React.FC = () => {
 
             <div className="space-y-6">
                 {EDUCATIONS.map((edu, idx) => (
-                    <div key={idx} className="glass p-6 rounded-3xl hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors duration-300 md:min-h-[160px]">
+                    <EducationCard key={idx} edu={edu} />
+                ))}
+            </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const EducationCard: React.FC<{ edu: typeof EDUCATIONS[0] }> = ({ edu }) => {
+  const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
+
+  return (
+    <div
+      ref={ref}
+      className={`glass p-6 rounded-3xl hover:border-zinc-400 dark:hover:border-zinc-600 transition-all duration-700 md:min-h-[160px] ${
+        isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+      }`}
+    >
                         <div className="flex justify-between items-start mb-4">
                             <div>
                                 <h3 className="font-bold text-lg text-black dark:text-zinc-100 transition-colors duration-300">{edu.degree}</h3>
@@ -47,11 +66,6 @@ const EducationSection: React.FC = () => {
                             ))}
                         </ul>
                     </div>
-                ))}
-            </div>
-        </div>
-      </div>
-    </section>
   );
 };
 
