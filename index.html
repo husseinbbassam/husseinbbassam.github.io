@@ -54,33 +54,43 @@
             backdrop-filter: blur(16px);
             border: 1px solid rgba(0, 0, 0, 0.06);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
         .dark .glass {
             background: rgba(18, 18, 22, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.05);
             box-shadow: none;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
         .bento-card {
             background: #ffffff;
             border: 1px solid rgba(0, 0, 0, 0.08);
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
         .dark .bento-card {
             background: #18181b;
             border: 1px solid #27272a;
             box-shadow: none;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
         .bento-card:hover {
             border-color: #a1a1aa;
-            -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+            -webkit-transform: translateY(-2px) translateZ(0);
+            transform: translateY(-2px) translateZ(0);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         .dark .bento-card:hover {
             border-color: #3f3f46;
             background: #1c1c21;
             box-shadow: none;
+            -webkit-transform: translateY(-2px) translateZ(0);
+            transform: translateY(-2px) translateZ(0);
         }
         .bg-clip-text {
             -webkit-background-clip: text;
